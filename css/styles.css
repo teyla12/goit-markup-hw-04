@@ -181,6 +181,11 @@ img {
   color: var(--acent-txt-cl);
 }
 
+.contacts-item {
+  fill: currentColor;
+  }
+
+
 /**
   |============================
   | Hero section
@@ -221,13 +226,30 @@ img {
 .peculiarities {
   padding-bottom: 0;
 }
-.peculiarities-items {
+
+
+.peculiarities-icons {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
   }
 
+.peculiarities-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F4FA;
+  background-size: 270px 120px;
+}
+
+.peculiarities-items {
+  display: flex;
+  gap: 30px;
+}
+
 .peculiarities-item {
-width: 270px;
+  width: 270px;
 }
 
 .section-subtitle {
@@ -316,7 +338,7 @@ width: 270px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--description-txt-cl);
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .team-member-card {
@@ -331,6 +353,62 @@ width: 270px;
   padding-bottom: 30px;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  }
+
+.social-link {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  color: #AFB1B8;
+  border-radius: 50%;
+   }
+
+  .social-icon {
+    fill:currentColor;
+  }
+
+  .social-link:hover,
+  .social-link:focus {
+    color: #ffffff;
+background-color: var(--acent-txt-cl)
+  }
+
+ 
+/**
+  |============================
+  | Our clients section
+  |============================
+*/ 
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 62px;
+  }
+
+.company-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  
+  color: #AFB1B8;
+}
+
+.company-logo {
+  fill: currentColor;
+}
+  
 /**
   |============================
   | Footer
@@ -342,7 +420,6 @@ width: 270px;
   background-color: var(--dark-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
- 
 }
 
 .footer-items {
@@ -372,7 +449,39 @@ width: 270px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  }
+
+.social-links-title {
+margin-bottom: 20px;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
 }
+
+.social-link-footer {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 50%;
+   }
+
+   .social-icon-footer {
+    fill:currentColor;
+  }
+
+  .social-link-footer:hover,
+  .social-link-footer:focus {
+    color: #ffffff;
+background-color: var(--acent-txt-cl)
+  }
 
 /**
   |============================
@@ -395,7 +504,7 @@ width: 270px;
 .portfolio-categories {
   display: flex;
   gap: 8px;
-  }
+}
 
 .portfolio-list {
   display: flex;
@@ -406,7 +515,6 @@ width: 270px;
 
 .portfolio-item {
   flex-basis: calc((100% - 30px * 2) / 3);
-
 }
 
 .portfolio-img-title {
@@ -433,5 +541,4 @@ width: 270px;
   padding-bottom: 20px;
   padding-right: 24px;
   padding-left: 24px;
- 
 }
