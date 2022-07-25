@@ -20,6 +20,12 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/styles.css" />
   <!-- Normalize end -->
+   <!-- Animate.css start -->
+   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!-- Animate.css end -->
 </head>
 
 <body>
@@ -61,7 +67,7 @@
           Эффективные решения <br>
           для вашего бизнеса
         </h1>
-        <button class="hero-btn btn" type="button">Заказать услугу</button>
+        <button class="hero-btn btn" type="button" data-modal-open>Заказать услугу</button>
       </div>
 
     </section>
@@ -126,14 +132,23 @@
       <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="work-directions items list">
-          <li>
-            <img class="section-item" src="images/img-1.jpg" alt="программирование" width="370" height="294" />
+          <li class="about-item">
+            <img class="section-img" src="images/img-1.jpg" alt="программирование" width="370" height="294" />
+            <div class="img-title-overlay">
+              <p class="img-title">Десктопные приложения</p>
+            </div>
           </li>
-          <li>
-            <img class="section-item" src="images/img-2.jpg" alt="aдаптация" width="370" height="294" />
+          <li class="about-item">
+            <img class="section-img" src="images/img-2.jpg" alt="aдаптация" width="370" height="294" />
+            <div class="img-title-overlay">
+              <p class="img-title">Мобильные приложения</p>
+            </div>
           </li>
-          <li>
-            <img class="section-item" src="images/img-3.jpg" alt="дизайн" width="370" height="294" />
+          <li class="about-item">
+            <img class="section-img" src="images/img-3.jpg" alt="дизайн" width="370" height="294" />
+          <div class="img-title-overlay">
+              <p class="img-title">Дизайнерские решения</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -348,7 +363,7 @@
             </a>
           </li>
         </ul>
-
+      </div>
   </main>
   <!-- Footer section -->
   <footer class="footer">
@@ -413,6 +428,20 @@
 
     
   </footer>
+
+  <!-- Modal window -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal-btn" data-modal-close>
+        <svg class="modal-btn-icon" width="20" height="20">
+          <use href="/images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
